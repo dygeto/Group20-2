@@ -14,6 +14,14 @@ public class testGame {
         Game g = new Game();
         assertNotNull(g);
     }
+    @Test
+    public void testDeckCount(){
+        Game g = new Game();
+        assertEquals(52,g.deck.size());
+        g.remove(2);
+        assertEquals(51,g.deck.size());
+    }
+
 
     @Test
     public void testGameBuildDeck(){
