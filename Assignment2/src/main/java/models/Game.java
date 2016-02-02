@@ -22,40 +22,6 @@ public class Game {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    //I like space between my methods
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public void buildDeck() {
         for(int i = 2; i < 15; i++){
             deck.add(new Card(i,Suit.Clubs));
@@ -64,31 +30,6 @@ public class Game {
             deck.add(new Card(i,Suit.Spades));
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-    //I like space between my methods
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     public void shuffle() {
@@ -147,7 +88,9 @@ public class Game {
     private Card getTopCard(int columnNumber) {
         return this.cols.get(columnNumber).get(this.cols.get(columnNumber).size()-1);
     }
-
+    public int deckSize(){
+        return deck.size();
+    }
 
     public void move(int colFrom, int colTo) {
         Card cardToMove = getTopCard(colFrom);
