@@ -34,3 +34,17 @@ height: 90px;
 background-size: cover;
 
 }
+
+#remove button{
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #d93434;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+#remove button:hover{
+    background-color: #4da352;
+    text-decoration: none;
+}
