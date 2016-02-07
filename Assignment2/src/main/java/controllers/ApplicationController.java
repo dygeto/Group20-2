@@ -16,6 +16,7 @@
 
 package controllers;
 
+import models.Card;
 import models.Game;
 import ninja.Context;
 import ninja.Result;
@@ -57,9 +58,8 @@ public class ApplicationController {
         return  Results.json().render(g);
     }
 
-    public Result moveCard(Context context, @PathParam("columnFrom") int colFrom, @PathParam("columnTo") int colTo, Game g){
-        g.move(colFrom,colTo);
-        return  Results.json().render(g);
+    public Result moveCard(Context context, @PathParam("columnFrom") int colFrom, @PathParam("columnTo") int colTo, Game g) {
+        g.move(colFrom, colTo);
+        return Results.json().render(g);
     }
-
 }

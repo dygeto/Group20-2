@@ -97,7 +97,7 @@ public class Game {
         {
             Card cardToMove = getTopCard(colFrom);
             this.removeCardFromCol(colFrom);
-            this.addCardToCol(colTo,cardToMove);
+            this.addCardToCol(colTo, cardToMove);
         }
         else
         {
