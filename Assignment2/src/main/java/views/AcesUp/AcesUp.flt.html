@@ -847,15 +847,37 @@ $("#Remove4").click(function(){
 $("#moveButton").click(function(){
 var colFrom = $("#from_col").val();
 var colTo = $("#to_col").val();
+
+//----This should warn about illegal moves---------
+/*
+var emptyCol = "<td class=\"cardLocation l0\"></td>";
+var cols = [$(document.getElementById("col0card").innerHTML), $(document.getElementById("col1card").innerHTML), $(document.getElementById("col2card").innerHTML), $(document.getElementById("col3card").innerHTML)];
+
+ if (cols[0] == emptyCol || cols[1] == emptyCol || cols[2] == emptyCol || cols[3] == emptyCol) {
+    $.ajax({
+        type: "POST",
+        url: "/moveCard/"+colFrom+"/"+colTo,
+        data: JSON.stringify(game),
+        success: function(data, status){console.log("Data: " + data + "\nStatus: " + status);
+            game = data;
+            display(data);},
+        contentType:"application/json; charset=utf-8",
+        dataType:"json",
+    });
+  } else {
+    window.alert("You can only move card to empty column");
+ }
+*/
+//---------------------------------------------------
 $.ajax({
-  type: "POST",
-  url: "/moveCard/"+colFrom+"/"+colTo,
-  data: JSON.stringify(game),
-  success: function(data, status){console.log("Data: " + data + "\nStatus: " + status);
+   type: "POST",
+   url: "/moveCard/"+colFrom+"/"+colTo,
+   data: JSON.stringify(game),
+   success: function(data, status){console.log("Data: " + data + "\nStatus: " + status);
         game = data;
         display(data);},
-  contentType:"application/json; charset=utf-8",
-  dataType:"json",
+   contentType:"application/json; charset=utf-8",
+   dataType:"json",
 });
 });
 
