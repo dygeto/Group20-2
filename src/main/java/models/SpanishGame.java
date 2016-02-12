@@ -9,6 +9,8 @@ import java.util.Random;
  */
 public class SpanishGame extends Game {
 
+    SpanishGame();
+
     public void buildDeck() {
         for(int i = 1; i < 11; i++){
             deck.add(new Card(i,Suit.Coins));
