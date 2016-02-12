@@ -29,11 +29,11 @@ public class testGame {
 
 
     @Test
-    public void testDeckCount(){
-        Game g = new Game();
-//        assertEquals(52,g.deck.size());
+    public void testAmericanDeckCount(){
+        Game g = new AmericanGame();
+        assertEquals(52,g.deck.size());
         g.remove(2);
-//        assertEquals(51,g.deck.size());
+        assertEquals(51,g.deck.size());
     }
 
 
