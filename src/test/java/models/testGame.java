@@ -9,11 +9,25 @@ import static org.junit.Assert.*;
  */
 public class testGame {
 
-    @Test
+/*    @Test
     public void testGameCreation(){
         Game g = new Game();
         assertNotNull(g);
+    }*/
+
+    @Test
+    public void testAmericanGameCreation() {
+        Game g = new AmericanGame();
+        assertNotNull(g);
     }
+
+    @Test
+    public void testSpanishGameCreation() {
+        Game s = new SpanishGame();
+        assertNotNull(s);
+    }
+
+
     @Test
     public void testDeckCount(){
         Game g = new Game();
