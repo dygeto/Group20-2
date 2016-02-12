@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-/**
+/*
  * Created by michaelhilton on 1/25/16.
  */
 public abstract class Game {
