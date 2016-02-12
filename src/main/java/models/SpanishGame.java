@@ -9,10 +9,10 @@ import java.util.Random;
  */
 public class SpanishGame extends Game {
 
-    SpanishGame();
+    public SpanishGame();
 
     public void buildDeck() {
-        for(int i = 1; i < 11; i++){
+        for(int i = 1; i < 13; i++){
             deck.add(new Card(i,Suit.Coins));
             deck.add(new Card(i,Suit.Cups));
             deck.add(new Card(i,Suit.Swords));
