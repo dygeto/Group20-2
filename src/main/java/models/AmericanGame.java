@@ -9,7 +9,6 @@ import java.util.Random;
  */
 public class AmericanGame extends Game {
 
-    public AmericanGame();
 
     public void buildDeck() {
         for(int i = 2; i < 15; i++){
